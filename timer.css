@@ -1,0 +1,81 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+ }
+ .kontejner {
+     width: 40vw;
+     height: 100vh;
+     background: rgb(18, 122, 240);
+     display: flex;
+     flex-direction: column;
+     border: 5px solid rgb(5, 71, 146);
+ }
+ .meni {
+     display: flex;
+     justify-content: space-around;
+     height: 5%;
+ }
+ .opcija {
+    flex: 1 1 0;
+    color: white;
+    background: rgb(5, 71, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .opcija:hover, .opcija:active {
+     background: rgb(18, 122, 240);
+     cursor: pointer;
+ }
+ .opcija.unos {
+     flex: 1.2 1 0;
+     color: black;
+     padding: 0 0 0 0.5em;
+     background: white;
+     cursor: text;
+ }
+ .main {
+     display: flex;
+     height: 100%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+ }
+ .vreme {
+     height: 50%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+ .tajmer {
+     height: 70%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 10em;
+ }
+ .cas {
+     height: 30%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .cas span {
+        flex: 0 0 35%;
+ }
+ .cas span:nth-child(1){
+     text-align: center;
+     font-size: 3em;
+ }
+ .cas span:nth-child(2){
+     height: 70%;
+     line-height: 110%;
+     font-size: 5em;
+ }
